@@ -33,3 +33,9 @@ async function getImage() {
       console.error('Error:', error);
     });
 }
+
+function reload() {
+  getJoke();
+  document.getElementById("displayPunchline").innerHTML = " "
+  document.getElementById("photo").src = " "
+}
